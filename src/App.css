@@ -1,38 +1,80 @@
+body {
+  background-color: lightslategray;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+th, td {
   color: white;
+  font-size: x-large;
+  letter-spacing: .05em;
+  font-weight: 200;
+  font-family: 'Anton', Impact, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: .2em solid black;
+  padding: .45em;
+  width: 16vw;
+  min-width: 100px;
+  max-width: 1em;
+  height: 50px;
+  max-height: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+td {
+  font-weight: lighter;
+  font-family: Impact, 'Arial Narrow Bold', sans-serif;
+  transform: scale(.9, 1.2);
+  text-shadow: .1em .075em #000;
+  color: #d69f4c;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+table, #question, #final-category {
+  margin-top: 4vh;
+  border-collapse: collapse;
+  background-color: #071277;
+}
+
+thead {
+  border: .3em solid black;
+  border-bottom: .4em solid black;
+}
+
+th {
+  /* font-size: 2vmin; */
+  font-size: 100%;
+  height: 60px;
+  text-shadow: .1em .075em #000;
+}
+
+#question, #final-category, #title, img {
+  height: 463px;
+  width: 762px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#text, #final-cat {
+  color: white;
+  /* margin-top: 25%; */
+  /* margin: 15%; */
+  width: 70%;
+  font-family: 'Forum','Times New Roman', Times, serif;
+  transform: scale(1.15, 1.1);
+  letter-spacing: .03em;
+  font-size: 250%;
+}
+#title, img {
+  object-fit: cover;
+}
+img {
+  color: white;
 }
